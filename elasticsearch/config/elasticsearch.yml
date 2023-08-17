@@ -3,7 +3,7 @@
 ## https://github.com/elastic/elasticsearch/blob/main/distribution/docker/src/docker/config/elasticsearch.yml
 #
 cluster.name: elk-cluster
-network.host: localhost
+network.host: 89.108.64.195
 
 ## X-Pack settings
 ## see https://www.elastic.co/guide/en/elasticsearch/reference/current/security-settings.html

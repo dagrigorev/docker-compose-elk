@@ -3,7 +3,7 @@
 
 elasticsearch:
   client:
-    hosts: [ http://127.0.0.1:9200 ]
+    hosts: [ http://89.108.64.195:9200 ]
   other_settings:
     username: elastic
     password: ${ELASTIC_PASSWORD}

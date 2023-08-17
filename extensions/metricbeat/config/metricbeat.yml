@@ -17,19 +17,19 @@ metricbeat.autodiscover:
 
 metricbeat.modules:
 - module: elasticsearch
-  hosts: [ http://elasticsearch:9200 ]
+  hosts: [ http://89.108.64.195:9200 ]
   username: monitoring_internal
   password: ${MONITORING_INTERNAL_PASSWORD}
   xpack.enabled: true
   period: 10s
   enabled: true
 - module: logstash
-  hosts: [ http://logstash:9600 ]
+  hosts: [ http://89.108.64.195:9600 ]
   xpack.enabled: true
   period: 10s
   enabled: true
 - module: kibana
-  hosts: [ http://kibana:5601 ]
+  hosts: [ http://89.108.64.195:5601 ]
   username: monitoring_internal
   password: ${MONITORING_INTERNAL_PASSWORD}
   xpack.enabled: true
@@ -59,7 +59,7 @@ monitoring:
     password: ${BEATS_SYSTEM_PASSWORD}
 
 output.elasticsearch:
-  hosts: [ http://elasticsearch:9200 ]
+  hosts: [ http://89.108.64.195:9200 ]
   username: metricbeat_internal
   password: ${METRICBEAT_INTERNAL_PASSWORD}
 
