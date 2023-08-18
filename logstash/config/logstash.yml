@@ -1,7 +1,0 @@
----
-## Default Logstash configuration from Logstash base image.
-## https://github.com/elastic/logstash/blob/main/docker/data/logstash/config/logstash-full.yml
-#
-http.host: 89.108.64.195
-
-node.name: logstash
